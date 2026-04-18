@@ -14,13 +14,17 @@
 
   <header class="site-header">
     <div class="container nav">
-      <div class="logo">Wir putzen Ihr Auto</div>
+      <a href="#" class="logo" aria-label="Startseite">
+        <img src="images/logo.png" alt="Logo Wir putzen Ihr Auto" />
+      </a>
+
       <nav class="nav-links">
         <a href="#leistungen">Leistungen</a>
         <a href="#vorher-nachher">Vorher/Nachher</a>
         <a href="#ablauf">Ablauf</a>
         <a href="#faq">FAQ</a>
       </nav>
+
       <a class="nav-cta" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
         Termin sichern
       </a>
@@ -46,7 +50,7 @@
           </div>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
+            <a class="btn btn-primary" href="https://wa.me/491744256041?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
               Jetzt Termin anfragen
             </a>
             <a class="btn btn-secondary" href="#leistungen">
@@ -70,15 +74,26 @@
           </div>
         </div>
 
-        <div class="hero-image-card">
-          <img src="images/hero-car.png" alt="Sauberes Auto nach professioneller Reinigung" />
+        <div class="hero-image-card slider">
+          <div class="slider-track">
+            <img src="images/hero-car.png" alt="Sauberes Auto nach professioneller Reinigung" class="slide active" />
+            <img src="images/hero-car-2.png" alt="Innenreinigung eines Fahrzeugs" class="slide" />
+            <img src="images/hero-car-3.png" alt="Professionelle Fahrzeugpflege von außen" class="slide" />
+          </div>
+
+          <button class="slider-btn prev" aria-label="Vorheriges Bild">&#10094;</button>
+          <button class="slider-btn next" aria-label="Nächstes Bild">&#10095;</button>
+
+          <div class="slider-dots">
+            <button class="dot active" aria-label="Bild 1"></button>
+            <button class="dot" aria-label="Bild 2"></button>
+            <button class="dot" aria-label="Bild 3"></button>
+          </div>
+
           <div class="floating-card">
             <strong>Erste Reinigung zum Neukundenpreis</strong>
-            <span>Ideal für Neukunden aus der Umgebung</span>
           </div>
         </div>
-      </div>
-    </section>
 
     <section class="proof-strip">
       <div class="container proof-items">
@@ -91,7 +106,6 @@
 
     <section class="section" id="leistungen">
       <div class="container">
-
         <div class="section-heading">
           <span class="section-label">Leistungen</span>
           <h2>Klare Preise. Kein Stress. Einfach ein sauberes Auto.</h2>
@@ -116,7 +130,7 @@
               <li>Außenfenster reinigen</li>
             </ul>
 
-            <a class="btn btn-card" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20die%20Außenreinigung%20buchen.">
+            <a class="btn btn-card" href="https://wa.me/491744256041?text=Hallo,%20ich%20möchte%20die%20Außenreinigung%20buchen.">
               Außenreinigung buchen
             </a>
           </article>
@@ -137,7 +151,7 @@
               <li>Innenfenster reinigen</li>
             </ul>
 
-            <a class="btn btn-card" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20die%20Innenreinigung%20buchen.">
+            <a class="btn btn-card" href="https://wa.me/491744256041?text=Hallo,%20ich%20möchte%20die%20Innenreinigung%20buchen.">
               Innenreinigung buchen
             </a>
           </article>
@@ -160,7 +174,7 @@
               <li>Bestes Preis-Leistungs-Verhältnis</li>
             </ul>
 
-            <a class="btn btn-primary" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20die%20Komplettreinigung%20buchen.">
+            <a class="btn btn-primary" href="https://wa.me/491744256041?text=Hallo,%20ich%20möchte%20die%20Komplettreinigung%20buchen.">
               Komplettreinigung buchen
             </a>
           </article>
@@ -173,19 +187,19 @@
       <div class="container">
         <div class="section-heading">
           <span class="section-label">Ergebnisse</span>
-          <h2>Vorher - Nachher Bilder</h2>
-          <p>Überzeugen sie sich selbst von Unseren Kunden Autos</p>
+          <h2>Vorher-/Nachher-Bilder</h2>
+          <p>Überzeugen Sie sich selbst von den Ergebnissen unserer Fahrzeugreinigung.</p>
         </div>
 
         <div class="before-after-grid">
           <div class="ba-card">
             <div class="ba-images">
               <div class="ba-image">
-                <img src="images/vorher.png" alt="Auto Innenraum vor der Reinigung" />
+                <img src="images/vorher.png" alt="Auto-Innenraum vor der Reinigung" />
                 <span>Vorher</span>
               </div>
               <div class="ba-image">
-                <img src="images/nacher.png" alt="Auto Innenraum nach der Reinigung" />
+                <img src="images/nachher.png" alt="Auto-Innenraum nach der Reinigung" />
                 <span>Nachher</span>
               </div>
             </div>
@@ -242,38 +256,6 @@
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="container why-grid">
-        <div class="why-content">
-          <span class="section-label">Warum wir</span>
-          <h2>Warum Kunden unseren Service buchen</h2>
-          <p>
-            Weil Zeit kostbar ist. Wir übernehmen die Reinigung Ihres Autos professionell und bequem vor Ort,
-            damit Sie sich um wichtigere Dinge kümmern können.
-          </p>
-
-          <div class="why-list">
-            <div class="why-item">
-              <strong>Spart Zeit</strong>
-              <p>Kein Warten in der Waschstraße und kein eigener Aufwand.</p>
-            </div>
-            <div class="why-item">
-              <strong>Bequem</strong>
-              <p>Sie bleiben vor Ort, wir übernehmen die Arbeit.</p>
-            </div>
-            <div class="why-item">
-              <strong>Sauberer Auftritt</strong>
-              <p>Ein gepflegtes Auto macht direkt einen besseren Eindruck – auf Sie und auf andere.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="why-image-card">
-          <img src="images/team.jpg" alt="Professionelle Autoreinigung vor Ort" />
-        </div>
-      </div>
-    </section>
-
     <section class="section cta-section">
       <div class="container cta-box">
         <span class="section-label light">Jetzt starten</span>
@@ -281,7 +263,7 @@
         <p>
           Der einfachste Weg: Schreiben Sie uns kurz per WhatsApp. Dann klären wir alles direkt.
         </p>
-        <a class="btn btn-primary btn-large" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
+        <a class="btn btn-primary btn-large" href="https://wa.me/491744256041?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
           Jetzt per WhatsApp anfragen
         </a>
       </div>
@@ -343,14 +325,14 @@
       </div>
 
       <div class="footer-links">
-        <a href="#">Impressum</a>
-        <a href="#">Datenschutz</a>
-        <a href="#">Kontakt</a>
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/kontakt.html">Kontakt</a>
       </div>
     </div>
   </footer>
 
-  <a class="sticky-mobile-cta" href="https://wa.me/49123456789?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
+  <a class="sticky-mobile-cta" href="https://wa.me/491744256041?text=Hallo,%20ich%20möchte%20einen%20Termin%20für%20eine%20Autoreinigung%20anfragen.">
     Jetzt Termin anfragen
   </a>
 
